@@ -1,0 +1,6 @@
+framework module Pods_FrankensteinApp {
+  umbrella header "Pods-FrankensteinApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

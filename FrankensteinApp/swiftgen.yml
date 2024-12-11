@@ -1,0 +1,16 @@
+
+xcassets:
+  - inputs:
+    - ${TARGET_NAME}/Sources/Resources/Colors.xcassets
+    - ${TARGET_NAME}/Sources/Resources/Images.xcassets
+    outputs:
+      - templateName: swift5
+        output: ${TARGET_NAME}/Sources/Generated/Asset.swift
+strings:
+   inputs:
+    - ${TARGET_NAME}/Sources/Resources/Strings/en.lproj/Localizable.strings
+   outputs:
+    templateName: structured-swift5
+    params:
+      enumName: Localized
+    output: ${TARGET_NAME}/Sources/Generated/Strings.swift
