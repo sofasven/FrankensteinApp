@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0435044A69A8FFD09E0FB08A /* Pods_FrankensteinApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5E895390F8500EA25C9DF0 /* Pods_FrankensteinApp.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		00A0A613ABCBFEE1B3C29DB5 /* Pods-FrankensteinApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankensteinApp.release.xcconfig"; path = "Target Support Files/Pods-FrankensteinApp/Pods-FrankensteinApp.release.xcconfig"; sourceTree = "<group>"; };
+		1E5E895390F8500EA25C9DF0 /* Pods_FrankensteinApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrankensteinApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EC183392D099E4400E38E9F /* FrankensteinApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FrankensteinApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		777BE830B8ECB21935BFE045 /* Pods-FrankensteinApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrankensteinApp.debug.xcconfig"; path = "Target Support Files/Pods-FrankensteinApp/Pods-FrankensteinApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0435044A69A8FFD09E0FB08A /* Pods_FrankensteinApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C036F0B8B08451435A96EBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				777BE830B8ECB21935BFE045 /* Pods-FrankensteinApp.debug.xcconfig */,
+				00A0A613ABCBFEE1B3C29DB5 /* Pods-FrankensteinApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6EC183302D099E4400E38E9F = {
 			isa = PBXGroup;
 			children = (
 				6EC1833B2D099E4400E38E9F /* FrankensteinApp */,
 				6EC1833A2D099E4400E38E9F /* Products */,
+				3C036F0B8B08451435A96EBE /* Pods */,
+				EFAE4CF5F2BF2839E45A2CC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +77,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EFAE4CF5F2BF2839E45A2CC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E5E895390F8500EA25C9DF0 /* Pods_FrankensteinApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,9 +92,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EC1834C2D099E4500E38E9F /* Build configuration list for PBXNativeTarget "FrankensteinApp" */;
 			buildPhases = (
+				6E3CB51E5912B442678030A1 /* [CP] Check Pods Manifest.lock */,
 				6EC183352D099E4400E38E9F /* Sources */,
 				6EC183362D099E4400E38E9F /* Frameworks */,
 				6EC183372D099E4400E38E9F /* Resources */,
+				3C7FDEF5E323D4C7FC00A151 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +106,6 @@
 				6EC1833B2D099E4400E38E9F /* FrankensteinApp */,
 			);
 			name = FrankensteinApp;
-			packageProductDependencies = (
-			);
 			productName = FrankensteinApp;
 			productReference = 6EC183392D099E4400E38E9F /* FrankensteinApp.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +154,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C7FDEF5E323D4C7FC00A151 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrankensteinApp/Pods-FrankensteinApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FrankensteinApp/Pods-FrankensteinApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FrankensteinApp/Pods-FrankensteinApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E3CB51E5912B442678030A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FrankensteinApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6EC183352D099E4400E38E9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,17 +209,18 @@
 /* Begin XCBuildConfiguration section */
 		6EC1834D2D099E4500E38E9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 777BE830B8ECB21935BFE045 /* Pods-FrankensteinApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3M52ZV2NZ3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FrankensteinApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -168,17 +238,18 @@
 		};
 		6EC1834E2D099E4500E38E9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A0A613ABCBFEE1B3C29DB5 /* Pods-FrankensteinApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3M52ZV2NZ3;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FrankensteinApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
